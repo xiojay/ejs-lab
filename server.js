@@ -55,7 +55,7 @@ const RESTAURANT = {
   };
   
   app.get('/', (req, res) => {
-    res.render('home.EJS', { RESTAURANT })
+    res.render('home.ejs', { RESTAURANT })
   });
   
 app.get('/menu', (req, res) => {
