@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RESTAURANT.name</title>
+</head>
+
+<body>
+  <%- include('./partials/nav') %>
+
+  <h1>Welcome to <%= RESTAURANT.name %></h1>
+  <p>Address: <%= RESTAURANT.address %></p>
+  <p>Phone: <%= RESTAURANT.phone %></p>
+<% if (RESTAURANT.isOpen) { %>
+<p>Yes, we are open!</p>
+<% } else { %>
+<p>Sorry! We're closed.</p>
+<% } %>
+
+ <h2>Menu</h2>
+
+</body>
+</html>
